@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedicalWorld</title>
+    <link rel="shortcut icon" href="/img/logomini.svg" />
+    <link rel="stylesheet" href="/style.css">
+    <meta name="viewport" content="width=device-width">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+
+                <div class="header-apteka">
+                    <div class="header-apteka-logo">
+                        <a href="/index.html"><img src="/img/logo-apteka.svg" alt=""></a>
+                    </div>
+                    <div class="header-apteka-search">
+                        <div class="header-apteka-search-form">
+                            <input type="text" class="header-apteka-search-form-input">
+                            <button class="header-apteka-search-form-button">Найти</button>
+                        </div>
+                    </div>
+                    <div class="header-apteka-info">
+                        <div class="header-apteka-info1">
+                            <a href="" class="header-apteka-info1-link">
+                                <img src="/img/account-apteka.svg" alt="">
+                            </a>
+    
+                        </div>
+                        <div class="header-apteka-info1">
+                            <a href="/favorites.html" class="header-apteka-info1-link">
+                                <img src="/img/favorites-apteka.svg" alt="">
+                            </a>
+                            <button id="open-modal-favor">избранное</button>
+                        </div>
+                        <div class="header-apteka-info1">
+                            <a href="" class="header-apteka-info1-link" >
+                                <img src="/img/basket-apteka.svg" alt="" class="header-apteka-info1-link-basket">
+                                
+                            </a>
+                            <button id="open-modal">корзина</button>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </header>
+
+        <div class="wrapper__line">
+            <hr size="4" color="#5213A3">
+        </div>
+
+        <div class="main">
+            <div class="container">
+
+                <div class="main_apteka-block">
+
+                    <div class="main_apteka-block1">
+                        <div class="main-breadcrumbs">
+                            <div class="main-breadcrumbs__link">
+                                <div class="main-breadcrumbs__link1">
+                                    <a href="/index.html" class="kamerong">Главная</a>
+                                </div>
+                                <div class="main-breadcrumbs__link1-block">
+                                    
+                                </div>
+                                <div class="main-breadcrumbs__link1">
+                                    <p class="kamerong">/</p>
+                                </div>
+                                <div class="main-breadcrumbs__link1-block">
+                                    
+                                </div>
+                                <div class="main-breadcrumbs__link1">
+                                    <a href="/apteka.html" class="kameronf">Каталог</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    
+
+                    <div class="block">
+
+                    </div>
+
+                    <div class="modal-fav" id="my-modal-fav">
+                        <div class="modal-box-fav">
+                            <button id="close-modal-fav" class="madal-close-btn">
+                                <img src="/img/close-img.svg" alt="">
+                            </button>
+                            <div class="main-apteka-favorites">
+                                <p class="aptkameron2">Избранное</p>
+                                <div class="main_apteka-block-basket-title">
+                                    <a href="" class="kamerong">очистить избранное</a>
+                                    
+                                </div>
+                                <div class="block">
+
+                                </div>
+
+                                <div class="main-apteka-favorites-line">
+                                    
+                                    
+                                    <div class="main_apteka-block-catalog__region-line-link" data-id="08">
+                                        <div class="main_apteka-block-catalog__region-line-item">
+                                            <a href="/product.html" class="main_apteka-block-catalog__region-line-item-logo">
+                                                <img src="img/product666.svg" alt="" class="product-img">
+                                            </a>
+                                            
+                                            <div class="main_apteka-block-catalog__region-line-item-status">
+                                                <img src="/img/status-logo.svg" alt="">
+                                                <p>5.0</p>
+                                            </div>
+                                            <div class="main_apteka-block-catalog__region-line-item-name">
+                                                <p class="aptkameron6">Вапигель</p>
+                                            </div>
+                                            <div class="main_apteka-block-catalog__region-line-item-price">
+                                                <p class="aptkameron5">560₽</p>
+                                                <p class="aptkameron4">500₽</p>
+                                            </div>
+                                            <div class="main_apteka-block-catalog__region-line-item-button">
+                                                <button class="item-button" data-cart="">Купить</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-form" id="my-modal-form">
+                        <div class="modal-box-form">
+                            <button id="close-modal-form" class="madal-close-btn">
+                                <img src="/img/close-img.svg" alt="">
+                            </button>
+                            <div class="main-apteka-form">
+                                <p class="aptkameron2">Оформление заказа</p>
+                               
+                                <div class="block">
+
+                                </div>
+                                <div class="main-apteka-form1">
+                                    <label for="email"><b class="kameronlist">Email</b></label>
+                                    <input class="form-input" type="text" placeholder="Введите вашу почту" name="email" required>
+                                
+                                    <label><b class="kameronlist">Телефон</b></label>
+                                    <input class="form-input" type="text" placeholder="Введите ваш телефон" name="phone" required>
+
+                                    <label><b class="kameronlist">Адрес</b></label>
+                                    <input class="form-input" type="text" placeholder="Введите ваш адрес" name="adres" required>
+                                
+                                    <label><b class="kameronlist">Имя</b></label>
+                                    <input class="form-input" type="text" placeholder="Введите ваше имя" name="adres" required>
+                                </div>
+
+                                <div class="main-apteka-form2">
+                                    <div class="main_apteka-block-catalog__region-line-item-button">
+                                        <button class="item-button" id="close-modal-reg">Оформить</button>
+                                    </div>
+                                </div>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="modal" id="my-modal">
+                        <div class="modal-box">
+                            <button id="close-modal" class="madal-close-btn">
+                                <img src="/img/close-img.svg" alt="">
+                            </button>
+                            <div class="main_apteka-block-basket" id="basket">
+
+                                <p class="aptkameron2">Корзина</p>
+
+                                <div class="main_apteka-block-basket-title">
+                                    <a href="" class="kamerong">очистить корзину</a>
+                                    
+                                </div>
+        
+                                <div class="block">
+        
+                                </div>
+        
+                                <div class="main_apteka-block-basket-products">
+        
+                                    <div class="main_apteka-block-basket-products-left">
+                                        
+                                       
+                                        
+                                        
+                                    </div>
+                                    <div class="main_apteka-block-basket-products-right">
+                                        <div class="main_apteka-block-basket-products-block2">
+                                            <div class="main_apteka-block-basket-products-block2-line">
+                                                <p class="kamerong">Товары </p>
+                                                <p class="kamerong" ><span id="totalproduct"></span></p>
+                                            </div>
+                                            
+                                            
+            
+                                            <div class="wrapper__line">
+                                                <hr size="3" color="#B5B4EB" width="335px">
+                                            </div>
+            
+                                            <div class="main_apteka-block-basket-products-block2-line">
+                                                <p class="kameronblack2">Итого:</p>
+                                                <p class="kameronblack2" ><span id="totalprice">1000</span>₽</p>
+                                                
+                                            </div>
+            
+                                            <div class="main_apteka-block-basket-products-block2-button">
+                                                <div class="main_apteka-block-catalog__region-line-item-button">
+                                                    <button class="item-button" id="item-button">Посчитать</button>
+                                                </div>
+                                                <div class="main_apteka-block-catalog__region-line-item-button">
+                                                    <button class="item-button" data-cart="" id="open-modal-form">Купить</button>
+                                                    
+                                                </div>
+                                            </div>
+
+                                           
+                                            
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="main_apteka-block2">
+
+                        <div class="main_apteka-block-category">
+                            <div class="main_apteka-block-category__title">
+                                <p class="aptkameron1">Категории</p>
+                            </div>
+
+                            <div class="main_apteka-block-category__list">
+
+                                <div class="main_apteka-block-category__list-line">
+                                    <a href="" class="aptkameron3">Акушерство</a>
+                                </div>
+                                <div class="main_apteka-block-category__list-line">
+                                    <a href="" class="aptkameron3">Антибактериальные ср-ва</a>
+                                </div>
+                                <div class="main_apteka-block-category__list-line">
+                                    <a href="" class="aptkameron3">Гемеопатические пр-ты</a>
+                                </div>
+                                <div class="main_apteka-block-category__list-line">
+                                    <a href="" class="aptkameron3">Горманальные</a>
+                                </div>
+                                <div class="main_apteka-block-category__list-line">
+                                    <a href="" class="aptkameron3">Дерматологические</a>
+                                </div>
+                                <div class="main_apteka-block-category__list-line">
+                                    <a href="" class="aptkameron3">Дыхательная с-ма</a>
+                                </div>
+                                <div class="main_apteka-block-category__list-line">
+                                    <a href="" class="aptkameron3">Костно-мышечная с-ма</a>
+                                </div>
+                                <div class="main_apteka-block-category__list-line">
+                                    <a href="" class="aptkameron3">Кровь и кровообращение</a>
+                                </div>
+                                <div class="main_apteka-block-category__list-line">
+                                    <a href="" class="aptkameron3">Мочеполовая с-ма</a>
+                                </div>
+                                <div class="main_apteka-block-category__list-line">
+                                    <a href="" class="aptkameron3">Нервная с-ма</a>
+                                </div>
+                                <div class="main_apteka-block-category__list-line">
+                                    <a href="" class="aptkameron3">Обезболивающие пр-ты</a>
+                                </div>
+                                <div class="main_apteka-block-category__list-line">
+                                    <a href="" class="aptkameron3">Пищеварительная с-ма</a>
+                                </div>
+                                <div class="main_apteka-block-category__list-line">
+                                    <a href="" class="aptkameron3">Препараты для иммунитета</a>
+                                </div>
+                                <div class="main_apteka-block-category__list-line">
+                                    <a href="" class="aptkameron3">Пр-ты для слуха и зрения</a>
+                                </div>
+                                <div class="main_apteka-block-category__list-line">
+                                    <a href="" class="aptkameron3">Пр-ты при простуде</a>
+                                </div>
+                                <div class="main_apteka-block-category__list-line">
+                                    <a href="" class="aptkameron3">Противогрибковые</a>
+                                </div>
+                                <div class="main_apteka-block-category__list-line">
+                                    <a href="" class="aptkameron3">Противоопухолевые</a>
+                                </div>
+                                <div class="main_apteka-block-category__list-line">
+                                    <a href="" class="aptkameron3">Противопаразитарные</a>
+                                </div>
+                                <div class="main_apteka-block-category__list-line">
+                                    <a href="" class="aptkameron3">Растительные</a>
+                                </div>
+                                <div class="main_apteka-block-category__list-line">
+                                    <a href="" class="aptkameron3">Сердечно-сосудистые</a>
+                                </div>
+                                <div class="main_apteka-block-category__list-line">
+                                    <a href="" class="aptkameron3">С-ма обмена веществ</a>
+                                </div>
+                                <div class="main_apteka-block-category__list-line">
+                                    <a href="" class="aptkameron3">Ср-ва от алкоголизма</a>
+                                </div>
+                                <div class="main_apteka-block-category__list-line">
+                                    <a href="" class="aptkameron3">Ср-ва от курения</a>
+                                </div>
+                                <div class="main_apteka-block-category__list-line">
+                                    <a href="" class="aptkameron3">Стоматологические</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="main_apteka-block-catalog">
+                            
+                            <div class="main_apteka-block-catalog__title">
+                                <p class="aptkameron2">Лекарственные препараты</p>
+
+                            </div>
+
+                            <div class="block">
+
+                            </div>
+
+                            <div class="main_apteka-block-catalog__region">
+                                <div class="main_apteka-block-catalog__region-line">
+
+                                    <div class="main_apteka-block-catalog__region-line-link" data-id="01">
+                                        <div class="main_apteka-block-catalog__region-line-item">
+                                            <a href="/product.html" class="main_apteka-block-catalog__region-line-item-logo">
+                                                <img src="img/product666.svg" alt="" class="product-img">
+                                            </a>
+                                            
+                                            <div class="main_apteka-block-catalog__region-line-item-status">
+                                                <img src="/img/status-logo.svg" alt="">
+                                                <p>5.0</p>
+                                            </div>
+                                            <div class="main_apteka-block-catalog__region-line-item-name">
+                                                <p class="aptkameron6">Мальтофер</p>
+                                            </div>
+                                            <div class="main_apteka-block-catalog__region-line-item-price">
+                                                <p class="aptkameron5">560₽</p>
+                                                <p class="aptkameron4">500₽</p>
+                                            </div>
+                                            <div class="main_apteka-block-catalog__region-line-item-button">
+                                                <button class="item-button" data-cart="">Купить</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+
+                                    <div class="main_apteka-block-catalog__region-line-link" data-id="02">
+                                        <div class="main_apteka-block-catalog__region-line-item">
+                                            <a href="/product.html" class="main_apteka-block-catalog__region-line-item-logo">
+                                                <img src="/img/product333.svg" alt="" class="product-img">
+                                            </a>
+                                            
+                                            <div class="main_apteka-block-catalog__region-line-item-status">
+                                                <img src="/img/status-logo.svg" alt="">
+                                                <p>5.0</p>
+                                            </div>
+                                            <div class="main_apteka-block-catalog__region-line-item-name">
+                                                <p class="aptkameron6">Хлоргексидин </p>
+                                            </div>
+                                            <div class="main_apteka-block-catalog__region-line-item-price">
+                                                <p class="aptkameron5">360₽</p>
+                                                <p class="aptkameron4">200₽</p>
+                                            </div>
+                                            <div class="main_apteka-block-catalog__region-line-item-button">
+                                                <button class="item-button" data-cart="">Купить</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="main_apteka-block-catalog__region-line-link" data-id="03">
+                                        <div class="main_apteka-block-catalog__region-line-item">
+                                            <a href="/product.html" class="main_apteka-block-catalog__region-line-item-logo">
+                                                <img src="img/product 4444.svg" alt="" class="product-img">
+                                            </a>
+                                            
+                                            <div class="main_apteka-block-catalog__region-line-item-status">
+                                                <img src="/img/status-logo.svg" alt="">
+                                                <p>5.0</p>
+                                            </div>
+                                            <div class="main_apteka-block-catalog__region-line-item-name">
+                                                <p class="aptkameron6">Гомеовокс </p>
+                                            </div>
+                                            <div class="main_apteka-block-catalog__region-line-item-price">
+                                                <p class="aptkameron5">560₽</p>
+                                                <p class="aptkameron4">500₽</p>
+                                            </div>
+                                            <div class="main_apteka-block-catalog__region-line-item-button">
+                                                <button class="item-button" data-cart="">Купить</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="main_apteka-block-catalog__region-line-link" data-id="04">
+                                        <div class="main_apteka-block-catalog__region-line-item">
+                                            <a href="/product.html" class="main_apteka-block-catalog__region-line-item-logo">
+                                                <img src="/img/product23.svg" alt="" class="product-img">
+                                            </a>
+                                            
+                                            <div class="main_apteka-block-catalog__region-line-item-status">
+                                                <img src="/img/status-logo.svg" alt="">
+                                                <p>5.0</p>
+                                            </div>
+                                            <div class="main_apteka-block-catalog__region-line-item-name">
+                                                <p class="aptkameron6">Йодомарин </p>
+                                            </div>
+                                            <div class="main_apteka-block-catalog__region-line-item-price">
+                                                <p class="aptkameron5">160₽</p>
+                                                <p class="aptkameron4">90₽</p>
+                                            </div>
+                                            <div class="main_apteka-block-catalog__region-line-item-button">
+                                                <button class="item-button" data-cart="">Купить</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="block">
+
+                                </div>
+
+                                <div class="main_apteka-block-catalog__region-line">
+
+                                    <div class="main_apteka-block-catalog__region-line-link" data-id="05">
+                                        <div class="main_apteka-block-catalog__region-line-item">
+                                            <a href="/product.html" class="main_apteka-block-catalog__region-line-item-logo">
+                                                <img src="/img/product25.svg" alt="" class="product-img">
+                                            </a>
+                                            
+                                            <div class="main_apteka-block-catalog__region-line-item-status">
+                                                <img src="/img/status-logo.svg" alt="">
+                                                <p>5.0</p>
+                                            </div>
+                                            <div class="main_apteka-block-catalog__region-line-item-name">
+                                                <p class="aptkameron6">Тридерм</p>
+                                            </div>
+                                            <div class="main_apteka-block-catalog__region-line-item-price">
+                                                <p class="aptkameron5">260₽</p>
+                                                <p class="aptkameron4">200₽</p>
+                                            </div>
+                                            <div class="main_apteka-block-catalog__region-line-item-button">
+                                                <button class="item-button" data-cart="">Купить</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="main_apteka-block-catalog__region-line-link" data-id="06">
+                                        <div class="main_apteka-block-catalog__region-line-item">
+                                            <a href="/product.html" class="main_apteka-block-catalog__region-line-item-logo">
+                                                <img src="img/product27.svg" alt="" class="product-img">
+                                            </a>
+                                            
+                                            <div class="main_apteka-block-catalog__region-line-item-status">
+                                                <img src="/img/status-logo.svg" alt="">
+                                                <p>5.0</p>
+                                            </div>
+                                            <div class="main_apteka-block-catalog__region-line-item-name">
+                                                <p class="aptkameron6">Симбикорт </p>
+                                            </div>
+                                            <div class="main_apteka-block-catalog__region-line-item-price">
+                                                <p class="aptkameron5">460₽</p>
+                                                <p class="aptkameron4">300₽</p>
+                                            </div>
+                                            <div class="main_apteka-block-catalog__region-line-item-button">
+                                                <button class="item-button" data-cart="">Купить</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="main_apteka-block-catalog__region-line-link" data-id="07">
+                                        <div class="main_apteka-block-catalog__region-line-item">
+                                            <a href="/product.html" class="main_apteka-block-catalog__region-line-item-logo">
+                                                <img src="img/product36.svg" alt="" class="product-img">
+                                            </a>
+                                            
+                                            <div class="main_apteka-block-catalog__region-line-item-status">
+                                                <img src="/img/status-logo.svg" alt="">
+                                                <p>5.0</p>
+                                            </div>
+                                            <div class="main_apteka-block-catalog__region-line-item-name">
+                                                <p class="aptkameron6">Кетонал </p>
+                                            </div>
+                                            <div class="main_apteka-block-catalog__region-line-item-price">
+                                                <p class="aptkameron5">260₽</p>
+                                                <p class="aptkameron4">190₽</p>
+                                            </div>
+                                            <div class="main_apteka-block-catalog__region-line-item-button">
+                                                <button class="item-button" data-cart="">Купить</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="main_apteka-block-catalog__region-line-link" data-id="08">
+                                        <div class="main_apteka-block-catalog__region-line-item">
+                                            <a href="/product.html" class="main_apteka-block-catalog__region-line-item-logo">
+                                                <img src="img/product46.svg" alt="" class="product-img">
+                                            </a>
+                                            
+                                            <div class="main_apteka-block-catalog__region-line-item-status">
+                                                <img src="/img/status-logo.svg" alt="">
+                                                <p>5.0</p>
+                                            </div>
+                                            <div class="main_apteka-block-catalog__region-line-item-name">
+                                                <p class="aptkameron6">Милдронат </p>
+                                            </div>
+                                            <div class="main_apteka-block-catalog__region-line-item-price">
+                                                <p class="aptkameron5">360₽</p>
+                                                <p class="aptkameron4">300₽</p>
+                                            </div>
+                                            <div class="main_apteka-block-catalog__region-line-item-button">
+                                                <button class="item-button" data-cart="">Купить</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="block">
+
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+
+
+                    <div class="footer-content__info1">
+                        <a href="footer-content__info1-link">
+                            <div class="footer-content__info-logo">
+                            
+                            </div>
+                        </a>
+                    </div>
+                    
+
+                        <div class="footer-content__info">
+                            <div class="footer-content__info-title">
+                                <div class="footer-content__info-title1">
+                                    <div class="footer-content__info-title1-block">
+                                        <a href="" class="link-info">
+                                            <p class="kameronwf">© 2024 Медицинский справочник MedicalWorld. </p>
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                        <div class="footer-content__info">
+                            <div class="footer-content__info-title">
+                                <div class="footer-content__info-title1">
+                                    <div class="footer-content__info-title1-block">
+                                        <a href="" class="link-info">
+                                            <p class="kameronwf">О НАС</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="footer-content__info-title1">
+                                    <div class="footer-content__info-title1-block">
+                                        <a href="" class="link-info">
+                                            <p class="kameronwf">УСЛОВИЯ ИСПОЛЬЗОВАНИЯ</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="footer-content__info">
+                            <div class="footer-content__info-link">
+                                <div class="footer-content__info-links">
+                                    <div class="footer-content__info-links-mini">
+                                        <a href="footer-content__info-link">
+                                            <div class="footer-content__info-link1">
+                                        
+                                            </div>
+                                        </a>
+                                        <a href="footer-content__info-link">
+                                            <div class="footer-content__info-link2">
+                                            
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="/scriptapteka.js"></script>
+</body>
+</html>

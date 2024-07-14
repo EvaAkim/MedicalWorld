@@ -1,0 +1,1519 @@
+/*--обнуление--*/
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.block{
+    height: 68px;
+}
+
+
+.block-title{
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block0{
+    width: 15px;
+}
+
+.block1{
+    height: 20px;
+}
+
+
+.kameron{
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    color: #5213A3;
+}
+
+.kameronf{
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    color: #7017E2;
+}
+
+.kamerong{
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    color: #7A7777;
+}
+
+
+.kameronstatef{
+    font-family: "Open Sans", sans-serif;
+    font-size: 32px;
+    color: #5213A3;
+}
+
+.kameronwf{
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.kameronw{
+    font-family: "Open Sans", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.kameronlist{
+    font-family: "Open Sans", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #5213A3;
+}
+
+.kameronlistm{
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    color: #5213A3;
+}
+
+.kameronstate1{
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #AD81E4;
+}
+
+.aptkameron1{
+    font-family: "Open Sans", sans-serif;
+    font-size: 30px;
+    color: #172500;
+    font-weight: 600;
+}
+
+.aptkameron2{
+    font-family: "Open Sans", sans-serif;
+    font-size: 36px;
+    color: #172500;
+    font-weight: 700;
+}
+
+.aptkameron3{
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    color: #172500;
+}
+
+.aptkameron3:hover{
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    color: #AD81E4;
+}
+
+.aptkameron4{
+    font-family: "Open Sans", sans-serif;
+    font-size: 26px;
+    color: #172500;
+    font-weight: 700;
+}
+
+.aptkameron5{
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    color: #C4C4C4;
+    font-weight: 400;
+    text-decoration: line-through;
+}
+
+.aptkameron6{
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    color: #172500;
+    font-weight: 700;
+}
+
+.aptkameron6-basket{
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    color: #172500;
+    font-weight: 700;
+}
+
+.aptkameron7{
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    color: #896DAD;
+    font-weight: 700;
+}
+
+.status-basket{
+    font-size: 14px;
+}
+
+.kamerongrey{
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    color: #C4C4C4;
+    font-weight: 600;
+}
+
+.kamerongrey1{
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    color: #C4C4C4;
+    font-weight: 600;
+}
+
+.kamerongrey1:hover{
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    color: #896DAD;
+    font-weight: 600;
+}
+
+.kameronviolet{
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    color: #8D74C2;
+    font-weight: 600;
+}
+
+.kameronblack1{
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    color: #172500;
+    font-weight: 600;
+}
+
+.kameronblack2{
+    font-family: "Open Sans", sans-serif;
+    font-size: 26px;
+    color: #172500;
+    font-weight: 700;
+}
+
+/*--основное--*/
+.wrapper{
+    display: flex;
+    min-height: 100%;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+/*--контентная часть--*/
+.container{
+    max-width: 1600px;
+    margin: 0px auto;
+    padding: 0px 10px;
+}
+
+/*--брейкпоинты--*/
+@media (max-width: 1600px){
+    .container{
+        max-width: 1400px;
+    }
+
+}
+
+@media (max-width: 1400px){
+    .container{
+        max-width: 1200px;
+    }
+    
+}
+
+@media (max-width: 1200px){
+    .container{
+        max-width: 992px;
+    }
+}
+
+@media (max-width: 992px){
+    .container{
+        max-width: 768px;
+    }
+}
+
+@media (max-width: 768px){
+    .container{
+        max-width: 576px;
+    }
+}
+
+@media (max-width: 576px){
+    .container{
+        max-width: 360px;
+    }
+}
+
+/*--header 1600--*/
+.header-logo{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-logo__img{
+    width: 278px;
+    height: 150px;
+    background-image: url(/img/Group\ 481.svg);
+}
+
+/*--header apteka 1600--*/
+.header-apteka{
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-apteka-logo{
+    width: 220px;
+    height: 110px;
+}
+
+.header-apteka-search{
+    width: 660px;
+    height: 45px;
+    border-radius: 24px;
+    border: 2px solid #CCB5E9;
+}
+
+.header-apteka-search-form{
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5px 0px 5px;
+}
+
+.header-apteka-search-form-input{
+    width: 500px;
+    height: 38px;
+    border-radius: 24px;
+    border: none;
+    outline: none;
+}
+
+.header-apteka-search-form-button{
+    width: 130px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #896DAD;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.header-apteka-info{
+    width: 200px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.header-apteka-info1-link-basket{
+    margin-bottom: 5px;
+
+}
+
+.header-apteka-info1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*--брейкпоинты--*/
+
+/*--footer 1600--*/
+.footer{
+    height: 300px;
+    background-color: #896DAD;
+}
+.footer-content{
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content__info1{
+    width: 278px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.footer-content__info-logo{
+    width: 278px;
+    height: 119px;
+    background-image: url(/img/footerlogo.svg);
+}
+
+
+.footer-content__info{
+    width: 400px;
+    height: 200px;
+}
+
+.footer-content__info-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+    height: 200px;
+}
+
+.footer-content__info-title1{
+    width: 278px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-content__info-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content__info-links{
+    width: 278px;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content__info-links-mini{
+    width: 195px;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content__info-link1{
+    width: 80px;
+    height: 86px;
+    background-image: url(/img/tg.svg);
+}
+
+.footer-content__info-link2{
+    width: 80px;
+    height: 86px;
+    background-image: url(/img/vk.svg);
+}
+/*--брейкпоинты--*/
+
+@media (max-width: 1200px){
+    .container{
+        max-width: 992px;
+    }
+
+    .footer{
+        height: 800px;
+    }
+
+    .footer-content{
+        height: 700px;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px){
+    .container{
+        max-width: 576px;
+    }
+
+    .footer{
+        height: 900px;
+    }
+
+    .footer-content{
+        height: 700px;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+
+/*--главная 1600--*/
+.main-title{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-section{
+    height: 1150px;
+    display: flex;
+    justify-content: center;
+}
+
+.main-section-container{
+    display: flex;
+    flex-direction: column;
+    width: 1275px;
+}
+
+.main-section__main-section-block{
+    width: 1275px;
+    height: 260px;
+    border-radius: 7px;
+}
+
+.main-section__main-section1-img{
+    width: 1275px;
+    height: 260px;
+    background-image: url(/img/img1.svg);
+    border-radius: 7px;
+    transition: 1s;
+}
+
+.main-section__main-section1-img:hover{
+    filter: opacity(80%);
+}
+
+.main-section__main-section2-img{
+    width: 1275px;
+    height: 260px;
+    background-image: url(/img/img2.svg);
+    border-radius: 7px;
+    transition: 1s;
+}
+
+.main-section__main-section2-img:hover{
+    filter: opacity(80%);
+}
+
+
+.main-section__main-section3-img{
+    width: 1275px;
+    height: 260px;
+    background-image: url(/img/img3.svg);
+    border-radius: 7px;
+    transition: 1s;
+}
+
+.main-section__main-section3-img:hover{
+    filter: opacity(80%);
+}
+
+.main-section__main-section4-img{
+    width: 1275px;
+    height: 260px;
+    background-image: url(/img/img4.svg);
+    border-radius: 7px;
+    transition: 1s;
+}
+
+.main-section__main-section4-img:hover{
+    filter: opacity(80%);
+}
+
+/*--брейкпоинты--*/
+
+
+@media (max-width: 1400px){
+    .container{
+        max-width: 1200px;
+    }
+
+    .main-section__main-section1-img{
+        width: 1000px;
+        background-image: url(/img/img11.svg);
+    }
+
+    .main-section__main-section2-img{
+        width: 1000px;
+        background-image: url(/img/img22.svg);
+    }
+
+    .main-section__main-section3-img{
+        width: 1000px;
+        background-image: url(/img/img33.svg);
+    }
+
+    .main-section__main-section4-img{
+        width: 1000px;
+        background-image: url(/img/img44.svg);
+    }
+
+    .main-section-container{
+        width: 1000px;
+    }
+}
+
+
+@media (max-width: 1200px){
+    .container{
+        max-width: 992px;
+    }
+
+    .main-section__main-section1-img{
+        width: 740px;
+        background-image: url(/img/img111.svg);
+    }
+
+    .main-section__main-section2-img{
+        width: 740px;
+        background-image: url(/img/img222.svg);
+    }
+
+    .main-section__main-section3-img{
+        width: 740px;
+        background-image: url(/img/img333.svg);
+    }
+
+    .main-section__main-section4-img{
+        width: 740px;
+        background-image: url(/img/img444.svg);
+    }
+
+    .main-section-container{
+        width: 740px;
+    }
+}
+
+@media (max-width: 992px){
+    .container{
+        max-width: 768px;
+    }
+
+    .main-section__main-section1-img{
+        width: 340px;
+        background-image: url(/img/img1111.svg);
+    }
+
+    .main-section__main-section2-img{
+        width: 340px;
+        background-image: url(/img/img2222.svg);
+    }
+
+    .main-section__main-section3-img{
+        width: 340px;
+        background-image: url(/img/img3333.svg);
+    }
+
+    .main-section__main-section4-img{
+        width: 340px;
+        background-image: url(/img/img4444.svg);
+    }
+
+    .main-section-container{
+        width: 340px;
+    }
+
+    .kameron{
+        font-size: 18px;
+    }
+}
+
+
+
+/*--заболевания 1600--*/
+.main-breadcrumbs{
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.main-breadcrumbs__link{
+    display: flex;
+}
+
+.main-breadcrumbs__link1-block{
+    width: 10px;
+}
+
+.main-slider{
+    height: 542px;
+}
+
+.main-slider__block{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-slider__block-img{
+    height: 452px;
+    background-image: url(/img/slider1.svg);
+    border-radius: 7px 7px 0px 0px; 
+}
+
+.main-slider__block-title{
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #AD81E4;
+}
+
+.main-category-block{
+    height: 2000px;
+}
+
+.main-category-block1{
+    width: 550px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-category-block-section{
+    height: 2000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main-category-block1__details details > summary{
+    list-style: none;
+}
+
+.summary{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-category-block1__details-list{
+    display: flex;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+/*--брейкпоинты--*/
+@media (max-width: 1200px){
+    .container{
+        max-width: 992px;
+    }
+
+    .main-category-block{
+        height: 3300px;
+    }
+
+    .main-category-block-section{
+        height: 1600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+
+/*--хирургия 1600--*/
+.main-slider__block-img11{
+    height: 452px;
+    background-image: url(/img/slider2.svg);
+    border-radius: 7px 7px 0px 0px; 
+}
+
+.main-category-block22{
+    height: 2000px;
+}
+
+.main-category-block-section1{
+    height: 2000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*--брейкпоинты--*/
+@media (max-width: 1200px){
+    .container{
+        max-width: 992px;
+    }
+
+    .main-category-block22{
+        height: 1400px;
+    }
+
+    .main-category-block-section1{
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+
+
+
+/*--препараты 1600--*/
+.main-slider__block-img22{
+    height: 452px;
+    background-image: url(/img/slider3.svg);
+    border-radius: 7px 7px 0px 0px; 
+}
+
+.main-category-block33{
+    height: 2000px;
+}
+
+.main-category-block-section33{
+    height: 2000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*--брейкпоинты--*/
+
+@media (max-width: 1200px){
+    .container{
+        max-width: 992px;
+    }
+
+    .main-category-block33{
+        height: 3000px;
+    }
+
+    .main-category-block-section33{
+        height: 1600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+
+
+/*--статья заболевания 1600--*/
+.main-slider1{
+    height: 400px;
+}
+
+.main-slider__block-img1{
+    height: 282px;
+    background-image: url(/img/state1.svg);
+    border-radius: 7px 7px 0px 0px; 
+}
+
+.main-content-block{
+    height: 220px;
+    width: 1600px;
+    display: flex;
+    justify-content: center;
+}
+
+.main-category-block-section2{
+    height: 2000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main-content-block-list{
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-content-block-list1{
+    margin-bottom: 15px;
+}
+
+.block-info1{
+    height: 700px;
+}
+
+.block-info2{
+    height: 700px;
+}
+
+.block-info1-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.block-info1-content-img{
+    width: 300px;
+    height: 300px;
+    border-radius: 7px;
+    background-image: url(/img/stateimg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.block-info1-content-text{
+    width: 1200px;
+    height: 400px;
+    margin-left: 30px;
+}
+
+.block-info2-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.block-info1-content-title1{
+    height: 50px;
+    margin-bottom: 30px;
+}
+
+.block-info1-content-text2{
+    height: 300px;
+    margin-bottom: 30px;
+}
+
+/*--брейкпоинты--*/
+
+@media (max-width: 1600px){
+    .container{
+        max-width: 1400px;
+    }
+
+    .block-info1{
+        width: 1400px;
+        height: 410px;
+    }
+
+    .main-content-block{
+        width: 1400px;
+    }
+
+}
+
+@media (max-width: 1400px){
+    .container{
+        max-width: 1200px;
+    }
+    
+    .block-info1{
+        width: 1000px;
+        height: 700px;
+    }
+
+    .block-info1-content-text{
+        width: 900px;
+        height: 400px;
+        margin-left: 30px;
+    }
+
+    .main-content-block{
+        width: 1200px;
+    }
+
+    .block-info1-content-img{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 1200px){
+    .container{
+        max-width: 992px;
+    }
+
+    .main-content-block{
+        width: 992px;
+    }
+    .block-info1{
+        width: 900px;
+        height: 700px;
+    }
+
+    .kameronstatef{
+        font-size: 26px;
+    }
+
+    .block-info1-content-text{
+        width: 600px;
+    }
+}
+
+@media (max-width: 992px){
+    .container{
+        max-width: 768px;
+    }
+    .main-content-block{
+        width: 768px;
+    }
+    .block-info1{
+        width: 600px;
+        height: 700px;
+    }
+
+    .block-info1-content-text{
+        width: 500px;
+    }
+
+    .kameronstatef{
+        font-size: 24px;
+    }
+
+    .kameronf{
+        font-size: 18px;
+    }
+    
+    .kamerong{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px){
+    .container{
+        max-width: 576px;
+    }
+    .main-content-block{
+        width: 576px;
+    }
+
+    .kameronf{
+        font-size: 14px;
+    }
+    
+    .kamerong{
+        font-size: 14px;
+    }
+
+    .kameronstate1{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 576px){
+    .container{
+        max-width: 360px;
+    }
+
+    .main-content-block{
+        width: 360px;
+    }
+
+    .block-info1{
+        width: 400px;
+        height: 700px;
+    }
+
+    .block-info1-content-img{
+        width: 70px;
+        height: 70px;
+    }
+    .block-info1-content-text{
+        width: 300px;
+    }
+
+    .kameronstatef{
+        font-size: 16px;
+    }
+
+    .kameronf{
+        font-size: 12px;
+    }
+    
+    .kamerong{
+        font-size: 12px;
+    }
+
+    .kameronstate1{
+        font-size: 12px;
+    }
+
+}
+
+/*--статья хирургия 1600--*/
+.main-slider__block-img2{
+    height: 282px;
+    background-image: url(/img/state2.svg);
+    border-radius: 7px 7px 0px 0px; 
+}
+
+.block-info1-content-img2{
+    width: 300px;
+    height: 300px;
+    border-radius: 7px;
+    background-image: url(/img/stateimg2.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+/*--статья препараты 1600--*/
+.main-slider__block-img3{
+    height: 282px;
+    background-image: url(/img/state33.svg);
+    border-radius: 7px 7px 0px 0px; 
+}
+.block-info1-content-img3{
+    width: 300px;
+    height: 300px;
+    border-radius: 7px;
+    background-image: url(/img/stateimg3.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/*==========АПТЕКА==========*/
+
+.main_apteka-block1{
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumbs{
+    display: flex;
+}
+
+.breadcrumb{
+    margin: 0 10px 0 10px;
+
+}
+
+.main_apteka-block2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main_apteka-block-category{
+    width: 400px;
+    height: 500px;
+}
+
+.main_apteka-block-category__title{
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.main_apteka-block-category__list{
+    height: 400px;
+    margin-bottom: 10px;   
+    overflow: scroll;
+
+}
+
+.main_apteka-block-category__list-line{
+    margin-bottom: 10px;
+}
+
+
+.main_apteka-block-catalog{
+    width: 1100px;
+    height: 1200px;
+    margin-left: 30px;
+}
+
+.main_apteka-block-catalog__region-line{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_apteka-block-catalog__region-line-item{
+    width: 250px;
+    height: 463px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+
+.main_apteka-block-catalog__region-line-item:hover{
+    width: 250px;
+    height: 463px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0 10px rgba(0,0,0,0.7);
+    cursor: pointer;
+}
+
+.main_apteka-block-catalog__region-line-item-logo{
+    width: 200px;
+    height: 170px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.main_apteka-block-catalog__region-line-item-status{
+    height: 20px;
+    width: 200px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.main_apteka-block-catalog__region-line-item-name{
+    width: 200px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.main_apteka-block-catalog__region-line-item-price{
+    width: 200px;
+    height: 67px;
+    margin-bottom: 20px;
+}
+
+.main_apteka-block-catalog__region-line-item-button{
+    width: 185px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #896DAD;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.item-button{
+    width: 185px;
+    height: 40px;
+    border-radius: 20px;
+    background: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    color: #FFFFFF;
+    font-weight: 700;
+    cursor: pointer;
+}
+/*--модальное окно favorites--*/
+.modal-fav{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 99998;
+    background-color: rgb(0, 0, 0, .3);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .4s, visibility .4s;
+}
+
+.modal-box-fav{
+    width: 1500px;
+    height: 900px;
+    padding: 45px;
+    z-index: 1;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 17px -7px rgba(34,60,80,0.2);
+}
+
+.modal-fav.open{
+    visibility: visible;
+    opacity: 1;
+}
+
+.main-apteka-favorites{
+    width: 1400px;
+    height: 800px;
+    overflow: scroll;
+    padding: 20px 20px
+}
+
+.main-apteka-favorites-line{
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/*--модальное окно--*/
+.modal{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 99998;
+    background-color: rgb(0, 0, 0, .3);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .4s, visibility .4s;
+}
+
+.modal-box{
+    width: 1500px;
+    height: 900px;
+    padding: 45px;
+    z-index: 1;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 17px -7px rgba(34,60,80,0.2);
+}
+
+.modal.open{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.madal-close-btn{
+    background: none;
+}
+
+/*--модальное окно--*/
+.modal-form{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 99999;
+    background-color: rgb(0, 0, 0, .3);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .4s, visibility .4s;
+}
+
+.modal-box-form{
+    width: 600px;
+    height: 900px;
+    padding: 45px;
+    z-index: 1;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 17px -7px rgba(34,60,80,0.2);
+}
+
+.modal-form.open{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.madal-close-btn{
+    background: none;
+}
+
+
+.main-apteka-form1{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.main-apteka-form2{
+    width: 600px;
+    display: flex;
+    justify-content: center;
+}
+
+.form-input{
+    width: 500px;
+    height: 50px;
+    border: solid 1px #896DAD;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+/*--favorites--*/
+.main_apteka-block-fav{
+    height: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main_apteka-block-favorites-title{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 200px;
+}
+
+/*--product--*/
+
+
+.main_apteka-block-prod{
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main_apteka-block-prod-container{
+    height: 500px;
+    width: 1600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    border-radius: 20px;
+}
+
+.main_apteka-block-prod-container-block1{
+    width: 400px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_apteka-block-prod-container-block2{
+    width: 200px;
+    height: 300px;
+}
+
+.main_apteka-block-prod-container-block2-title{
+    margin-bottom: 30px;
+}
+
+.main_apteka-block-prod-container-block3{
+    width: 160px;
+    height: 300px;
+}
+
+.main_apteka-block-prod-container-block4{
+    width: 260px;
+    height: 300px;
+}
+
+.main_apteka-block-catalog__title1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.icon-book{
+    margin-left: 10px;
+}
+
+.main_apteka-block-more{
+    height: 700px;
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*--basket--*/
+.main_apteka-block-basket{
+    height: 1000px;
+}
+
+.main_apteka-block-basket-products{
+    display: flex;
+    flex-direction: row;
+}
+
+.main_apteka-block-basket-products-left{
+    width: 1100px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+
+}
+
+
+.main_apteka-block-basket-products-block1{
+    width: 800px;
+    height: 300px;
+    border: 1px solid #7348ac;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.main_apteka-block-basket-products-block1-counter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 30px;
+    height: 20px;
+}
+
+.countertitle{
+    width: 20px;
+}
+.countertitle22{
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    color: #7017E2;
+    font-weight: 700;
+}
+
+input::-webkit-inner-spin-button, 
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none; /* Нет больше спиннеров. */
+}
+
+
+.main_apteka-block-basket-products-block2{
+    width: 360px;
+    height: 585px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    border-radius: 20px;
+    margin-left: 200px;
+    padding: 40px 20px 10px 20px;
+}
+
+.main_apteka-block-basket-products-block2-line{
+    margin-bottom: 40px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main_apteka-block-basket-products-block2-button{
+    width: 335px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 300px;
+}
+
